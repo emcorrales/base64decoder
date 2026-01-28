@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Decoder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Base64 Decoder</h1>
+            <p class="subtitle">Encode and decode text instantly</p>
+            
+            <div class="input-section">
+                <h2>Input</h2>
+                <textarea 
+                    id="inputText" 
+                    placeholder="Enter base64 text to decode or regular text to encode..."
+                    rows="6"
+                ></textarea>
+            </div>
+
+            <div class="button-group">
+                <button id="decodeBtn" class="btn btn-primary">Decode Base64</button>
+                <button id="encodeBtn" class="btn btn-secondary">Encode to Base64</button>
+                <button id="clearBtn" class="btn btn-danger">Clear</button>
+            </div>
+
+            <div class="output-section">
+                <h2>Output</h2>
+                <textarea 
+                    id="outputText" 
+                    placeholder="Decoded/encoded result will appear here..."
+                    rows="6"
+                    readonly
+                ></textarea>
+                <button id="copyBtn" class="btn btn-copy">Copy to Clipboard</button>
+            </div>
+
+            <div id="notification" class="notification"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
